@@ -1,0 +1,28 @@
+/* Utility: float an element (including text elements) to the right */
+.pull-right-float {
+    /* pin to the top-right of the nearest positioned ancestor */
+    position: absolute !important;
+    top: -20 !important;
+    right: 0 !important;
+    float: none !important;
+}
+
+/* For inline text elements where you want them to remain inline but aligned right */
+.pull-right-inline {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Align text content to the right (keeps layout flow) */
+.text-right {
+    text-align: right !important;
+}
+
+/* Helper: clearfix for containers with floated children */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
