@@ -4,6 +4,7 @@ class Database {
     private $db_name = 'dbPNfixPshrk9HZuxhYxSS2v';//'portfolio';
     private $username = '179840eb78ad80005d3301d4272a';//'root';
     private $password = '06911798-40ec-7a63-8000-82cc049454bd';
+    private $port = 10272; //3306;
     private $conn;
 
     public function connect() {
@@ -11,7 +12,7 @@ class Database {
 
         try {
             $this->conn = new PDO(
-                "mysql:host={$this->host};port=10272;dbname={$this->db_name};charset=utf8mb4",
+                "mysql:host={$this->host};port={$this->port};dbname={$this->db_name};charset=utf8mb4",
                 $this->username,
                 $this->password
             );
