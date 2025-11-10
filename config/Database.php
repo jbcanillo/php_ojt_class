@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = 'db.fr-pari1.bengt.wasmernet.com';//'localhost';
-    private $db_name = 'portfolio';
+    private $db_name = 'dbPNfixPshrk9HZuxhYxSS2v';//'portfolio';
     private $username = '179840eb78ad80005d3301d4272a';//'root';
     private $password = '06911798-40ec-7a63-8000-82cc049454bd';
     private $conn;
